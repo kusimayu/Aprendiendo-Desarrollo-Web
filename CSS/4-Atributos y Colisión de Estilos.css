@@ -1,0 +1,43 @@
+/* A los elementos se le puede asignar distintos atributos, para darle caracteristicas especiales, como atributos de lenguaje o de título, etc */
+/* Sin importar el valor de los atributos, la característica cambiará solo por poner el atributi tittle */
+
+
+/* h2[title]{
+    color: lawngreen;
+} */
+
+
+/* si hay muchos elementos con el mismo atributo y deseamos darle una caracteristica distinta a un elemento, podemos escribir el valor exacto de ese elemento para hacer los cambios */
+
+
+/* h2[title="main cabecera"]{
+    color: red ;
+}
+ */
+
+
+/* Si tenemos elementos que comparten una misma palabra en su valor asignado, podemos darle el mismo diseño si en el title le pondemos la ~ */
+
+h2[title~="cabecera"]{
+    color: red;
+}
+
+
+/* EL atributo de lang, es para identificar el lenguaje en el que se está escribiendo el elemento */
+
+h2[lang |= "es"]{
+    color: royalblue;
+}
+
+/* Colisión de estilos:
+
+1- CSS del navegador
+2- CSS del usuario
+3- archivos css enlazados en el orden añadidos
+4- propiedades que se heredan
+5- propiedades propias del elemento
+6- clases asignada en el mismo orden de asignación
+7- identificador
+8- !important
+
+*/
