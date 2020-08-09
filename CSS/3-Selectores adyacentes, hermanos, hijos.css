@@ -1,0 +1,16 @@
+/* Selector adyacente. Los párrafos que tienen un párrafo antes, van a verse modificados por las características que deseemos */
+p+p {
+    color:red;
+}
+
+/* Selectores Hijos, en este ejemplo lo que decimos es que todo hijo inmediato de un div, será modificado a lo que especifiquemos */
+ 
+div > p {
+    color: green;
+}
+
+/* Selectores hermanos, en este selectos no importa la posción de los elementos(parrafos) siempre y cuando sean hermanos, van a tomar las caracteristicas que nosotros les demos */
+
+p~p {
+    color: indigo;
+}
