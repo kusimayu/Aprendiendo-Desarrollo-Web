@@ -1,0 +1,19 @@
+/* Siempre poner la ruta completa para hacer un diseño en algún punto en específico, en este caso solo cambia de color las etiquetas que tengan la ruta especifica c: */
+header div h2 {
+    color: red;
+}
+/* le damos color a todos los párrafos */
+p {
+    color: green;
+}
+/* le damos color a una sola etiqueta mediante un identificador, para ello se pone la almohadilla */
+p#azul {
+    color: blue;
+}
+p.prueba {
+    color: blueviolet;
+}
+p.grande {
+    color: brown;
+    font-size: 20px;
+}
