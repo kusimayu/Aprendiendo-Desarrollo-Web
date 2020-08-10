@@ -1,0 +1,14 @@
+div.fija{
+    height: 100px;
+    width: 100px;
+    background-color: red;
+}
+
+
+/* Las medidas porcentuales se adaptan a las medidas de las pantallas, por ello son bastante usadas en el Responsive desing */
+div.porcentual{
+    height: 100px;
+    width: 50%;
+    background-color: green;
+    margin: 5%;
+}
