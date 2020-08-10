@@ -1,0 +1,24 @@
+body{
+    /* Siempre la unidad de medida y su valor van juntos, ya que se van separados, estos se anulan */
+    /* Los tamaños no tienen que ser necesariamente enteros. En el caso de que sean números como  0.4, se puede anular el 0 y poner .4 */
+    font-size: 16px;
+}
+
+/* Para realizar Textos, es recomendable usar la medida EM ya que es mucho más escalable y juega con la herencia*/
+/* El EM al jugar con la herencia, va a tomar la medida que hereda y lo multiplica por la pedida que le demos al EM*/
+p.em{
+    font-size: 2em;
+}
+
+
+/* En este caso, los párrafos del div también heredan la medida del body, y duplica sus pixeles, entonces tendremos unos párrafos de 32px. Tendríamos que especificar qué párrafo deseamos aplicar el EM para que no se apliquen a todos */
+div p{
+    font-size: 2em;
+}
+
+/* A las unidades REM no le influyen las herencias, esto quiere decir que se trabaja directamente con la medida del body para aplicar los cambios */
+div p.rem{
+    font-size: 1rem;
+}
+
+
